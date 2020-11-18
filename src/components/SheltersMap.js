@@ -6,7 +6,7 @@ import '../styles/pages/shelters-map.css';
 import  { MapContainer, Marker, Popup }  from 'react-leaflet';
 import {TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import Leaflet, { popup } from 'leaflet';
+import Leaflet from 'leaflet';
 
 const mapIcon = Leaflet.icon({
     iconUrl: mapMarkerImg,
@@ -20,7 +20,9 @@ export default function SheltersMap() {
         <div id="page-map">
             <aside>
                 <header>
+                    <Link to="/" >
                     <img src={mapMarkerImg} alt="happy" />
+                    </Link>
 
                     <h2>Choose a shelter on the map</h2>
                     <p>Your new buddy is waiting for you :)</p>
@@ -34,7 +36,7 @@ export default function SheltersMap() {
 
             <MapContainer 
                 center={[33.8623597,-84.4697653]}
-                zoom={15}
+                zoom={14}
                 style={{ width: '100%', height: '100%' }}
             >
             {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
@@ -48,7 +50,7 @@ export default function SheltersMap() {
 
                 <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
                     Shelter's name
-                    <Link to="">
+                    <Link to="/shelters/1">
                         <FiArrowRight size={20} color="#FFF"/>
                     </Link>
                 </Popup>
@@ -57,7 +59,7 @@ export default function SheltersMap() {
 
             </MapContainer>
 
-            <Link to="" className="create-shelter">
+            <Link to="/shelters/create" className="create-shelter">
                 <FiPlus size={32} color="FFF"/>
             </Link>
         </div>
