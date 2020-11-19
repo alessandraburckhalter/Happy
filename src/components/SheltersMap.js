@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import mapMarkerImg from '../images/logo.svg';
 import { Link} from 'react-router-dom';
 import {FiPlus, FiArrowRight} from 'react-icons/fi';
@@ -16,6 +16,17 @@ const mapIcon = Leaflet.icon({
 })
 
 export default function SheltersMap() {
+
+    const [ shelters, setShelters] = useState([])
+
+    useEffect(() => {
+        fetch('/api/v1/shelters')
+            .then(res => res.json())
+            .then(data => {
+                setShelters(data)
+            })
+    }, [])
+
     return (
         <div id="page-map">
             <aside>
@@ -43,23 +54,28 @@ export default function SheltersMap() {
 
             <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
 
-            <Marker 
+           {shelters.map(shelter => {
+               return (
+                <Marker 
                 icon={mapIcon}
-                position={[33.8623597,-84.4697653]}
+                position={[shelter.latitude, shelter.longitude]}
+                key={shelter.id}
             >
 
                 <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
-                    Shelter's name
-                    <Link to="/shelters/1">
+                    {shelter.name}
+                    <Link to={`/api/v1/shelters/${shelter.id}`}>
                         <FiArrowRight size={20} color="#FFF"/>
                     </Link>
                 </Popup>
 
             </Marker>
+               )
+           })}
 
             </MapContainer>
 
-            <Link to="/shelters/create" className="create-shelter">
+            <Link to="/api/v1/shelters" className="create-shelter">
                 <FiPlus size={32} color="FFF"/>
             </Link>
         </div>
