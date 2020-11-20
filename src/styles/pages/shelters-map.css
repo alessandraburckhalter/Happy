@@ -98,3 +98,61 @@
 #page-map .map-popup .leaflet-popup-tip-container {
     display: none;
 }
+
+
+/* MEDIA QUERY */
+
+  /* iphone  */
+  @media(max-width: 750px ) {
+
+  }
+
+
+  /* Media Query For Tablet */
+  @media screen and (max-width:800px) { 
+    #page-map aside {
+        width:100px;
+        padding: 10px;
+      }
+
+      #page-map aside h2 {
+       display: none;
+      }
+
+      #page-map aside p {
+        display: none;
+       }
+
+      #page-map aside img {
+        width: 70%;
+      }
+  }
+
+@media(min-width: 750px) {
+
+  
+    #page-map .create-shelter {
+      position: absolute;
+      bottom: 10%;
+  
+    }
+    
+  }
+  
+  @media(max-width: 750px) {
+    #page-map aside {
+        
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            padding: 32px 24px;
+            z-index: 9;
+          
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    }
+    
+  }
+  

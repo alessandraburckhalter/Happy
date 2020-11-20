@@ -89,3 +89,71 @@
 .content-wrapper .enter-app:hover {
     background: #96feff;
 }
+
+/* MEDIA QUERY */
+
+  /* iphone  */
+   @media(max-width: 750px ) {
+  
+    #page-landing .content-wrapper {
+      background: none;
+      align-items: center;
+      text-align: center;
+      padding: 5px;
+   }
+  
+   #page-landing .content-wrapper main h1 {
+    margin-top: 60px;
+    font-size: 65px;
+  
+    }
+  
+   #page-landing .content-wrapper main p {
+    display: none;
+    }
+  
+    .content-wrapper .location {
+      position: relative;
+      text-align: center;
+      margin-top: 60px;
+    }
+  
+    .content-wrapper .enter-app {
+      position: relative;
+      
+    }
+  
+  }
+  
+  /* Media Query For Tablet */
+  @media screen and (max-width:800px) { 
+    #page-landing .content-wrapper {
+        background: none;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+     }
+     
+     #page-landing .content-wrapper main h1 {
+        margin-top: 60px;
+        font-size: 75px;
+      
+        }
+      
+       #page-landing .content-wrapper main p {
+        display: none;
+        }
+      
+        .content-wrapper .location {
+          position: relative;
+          text-align: center;
+          margin-top: 80px;
+          padding: 10px;
+        }
+      
+        .content-wrapper .enter-app {
+          position: relative;
+          
+        }
+
+}

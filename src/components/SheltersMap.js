@@ -7,6 +7,8 @@ import  { MapContainer, Marker, Popup }  from 'react-leaflet';
 import {TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import Leaflet from 'leaflet';
+import logoImg from '../images/logo1.svg';
+
 
 const mapIcon = Leaflet.icon({
     iconUrl: mapMarkerImg,
@@ -32,7 +34,7 @@ export default function SheltersMap() {
             <aside>
                 <header>
                     <Link to="/" >
-                    <img src={mapMarkerImg} alt="happy" />
+                    <img src={logoImg} alt="happy" width="65%"/>
                     </Link>
 
                     <h2>Choose a shelter on the map</h2>
@@ -40,7 +42,7 @@ export default function SheltersMap() {
                 </header>
 
                 <footer>
-                    <strong>Atlanta</strong>
+                    <strong>Atlanta area</strong>
                     <span>Georgia</span>
                 </footer>
             </aside>
@@ -64,7 +66,7 @@ export default function SheltersMap() {
 
                 <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
                     {shelter.name}
-                    <Link to={`/api/v1/shelters/${shelter.id}`}>
+                    <Link to={`/shelters/${shelter.id}`}>
                         <FiArrowRight size={20} color="#FFF"/>
                     </Link>
                 </Popup>
@@ -75,7 +77,7 @@ export default function SheltersMap() {
 
             </MapContainer>
 
-            <Link to="/api/v1/shelters" className="create-shelter">
+            <Link to="/shelters/create" className="create-shelter">
                 <FiPlus size={32} color="FFF"/>
             </Link>
         </div>

@@ -3,7 +3,8 @@ import '../styles/pages/landing.css';
 import logoImg from '../images/logo1.svg';
 import {FiArrowRight} from 'react-icons/fi';
 import { Link } from 'react-router-dom'
-import { FaPaw } from 'react-icons/fa'
+import { FaPaw } from 'react-icons/fa';
+
 
 export default function Landing() {
     return (
@@ -12,15 +13,14 @@ export default function Landing() {
       
           <img src={logoImg} alt="Happy" />
         
-     
-
       <main>
-        <h1>Bring happines to your <br/> w<FaPaw size={50}/>rld</h1>
-        <p>Search for animal shelters and find your best friend</p>
+        <h1>Bring happiness to your <br/> w<FaPaw size={50}/>rld</h1>
+        <p>Find your best friend by searching for animal shelters and help the community by registering a new one </p>
+        
       </main>
 
       <div className="location">
-        <strong>Atlanta</strong>
+        <strong>Atlanta area</strong>
         <span>Georgia</span>
       </div>
 

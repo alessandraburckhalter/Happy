@@ -1,6 +1,7 @@
 #page-shelter {
   display: flex;
   min-height: 100vh;
+  background-image: url(/src/images/background4.svg);
 }
 
 #page-shelter main {
@@ -169,14 +170,109 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 
   transition: background-color 0.2s;
 }
 
 .shelter-details .shelter-details-content button.contact-button svg {
   margin-right: 16px;
+  text-decoration: none;
 }
 
 .shelter-details .shelter-details-content button.contact-button:hover {
   background: #36cf82;
+}
+
+@media(min-width: 890px) {
+
+  .imgMobile {
+    display: none;
+  }
+ 
+  
+}
+
+@media(max-width: 890px) {
+  .shelter-details {
+    width: 100vw;
+    padding: 64px 0px;
+    margin-bottom: 0;
+    margin-top: -10px;
+
+  }
+
+  .shelter-details .shelter-details-content {
+    padding: 80px 5%;
+  }
+
+  .imgMobile {
+    margin-top: 100px;
+    width: 100%;
+
+  
+  }
+  .shelter-details > img {
+    
+  }
+
+  .shelter-details .images {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+}
+
+@media(max-width: 550px) {
+
+  .BtnsDoacoes {
+    display: initial;
+  }
+  
+  .BtnsDoacoes .btn:first-child{
+    margin-top: 40px;
+  }
+
+  .BtnsDoacoes .btn{
+    margin-top: 10px;
+  }
+  
+  
+  
+}
+
+@media(max-width: 460px) {
+
+  .shelter-details .shelter-details-content .open-details {
+    display: initial; 
+  } 
+
+  .shelter-details .shelter-details-content .open-details .hour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    height: 200px;
+  }
+  .shelter-details .shelter-details-content .open-details .hour svg{
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+  
+  .shelter-details .shelter-details-content .open-details .open-on-weekends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 200px;
+  }
+
+  .shelter-details .shelter-details-content .open-details .open-on-weekends svg{
+    margin-right: 10px;
+    margin-left: -20px;
+  }
+
+
+  
+  
 }

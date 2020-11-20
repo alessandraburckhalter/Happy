@@ -11,8 +11,8 @@ export default function Routes() {
         <Switch>
             <Route exact path="/" component={Landing} />
             <Route path="/app" component={SheltersMap} />
-            <Route path="/api/v1/shelters" component={CreateShelter} />
-            <Route path="/api/v1/shelters/:id" component={Shelter} />
+            <Route path="/shelters/create" component={CreateShelter} />
+            <Route path="/shelters/:id" component={Shelter} />
         </Switch>
         </BrowserRouter>
     )

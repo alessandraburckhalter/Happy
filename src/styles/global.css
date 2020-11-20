@@ -6,9 +6,22 @@
 
 body {
     color: #FFF;
-    background: #ebf2f5;
+    background-image: url(/src/images/background4.svg);
 }
 
 body, input, button, textarea {
     font: 600 18px Nunito, sans-serif;
 }
+
+/* .btn-switcher1 {
+    position: absolute;
+    display: flex;
+    top: 0;
+} */
+
+/* .btn-switcher2 {
+    position: absolute;
+    display: flex;
+    top: 0;
+
+} */

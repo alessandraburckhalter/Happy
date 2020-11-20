@@ -3,11 +3,12 @@ import { FaPhone } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import  { MapContainer, Marker }  from 'react-leaflet';
 import {TileLayer } from 'react-leaflet';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import mapMarkerImg from '../images/logo.svg';
 import '../styles/pages/shelters.css';
 import Leaflet, { imageOverlay } from 'leaflet';
 import Sidebar from './Sidebar';
+import { FaPrayingHands } from 'react-icons/fa'
 
 const HappyMapIcon = Leaflet.icon({
     iconUrl: mapMarkerImg,
@@ -68,7 +69,7 @@ export default function Shelter() {
 
                     <div className="shelter-details-content">
                         <h1>{shelter.name}</h1>
-                        <p>{shelter.description}</p>
+                        <p>{shelter.about}</p>
 
 
                     <div className="map-container">
@@ -99,13 +100,13 @@ export default function Shelter() {
 
                     <hr />
 
-                    <h2>Come visit us</h2>
+                    <h2>Ready to make a visit?</h2>
                     <p>{shelter.instructions}</p>
 
                     <div className="open-details">
                         <div className="hour">
-                            <FiClock size={32} color="#15B6D6" />
-                            Monday to Friday <br />
+                            <FaPrayingHands size={32} color="#15B6D6" />
+                            <br />
                             {shelter.open_hours}
                         </div>
                         
@@ -125,10 +126,12 @@ export default function Shelter() {
 
                     </div>
 
+                    <Link to="tel:123-456-7890" target="_blank">      
                     <button type="button" className="contact-button">
                         <FaPhone size={20} color="FFF" />
                         Get in touch
                     </button>
+                    </Link>  
                 </div>
             </div>
             </main>
