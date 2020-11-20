@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<p align="center">
+<img src="https://user-images.githubusercontent.com/68092946/99815768-bfae1b00-2b18-11eb-8094-56948e49428d.jpg"></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 
+<p align="center">
+<img src="https://img.shields.io/github/issues/alessandraburckhalter/Happy?color=FFD666"> <img src="https://img.shields.io/github/forks/alessandraburckhalter/Happy?color=FFD666"> <img src="https://img.shields.io/github/stars/alessandraburckhalter/Happy?color=FFD666"></p>
 
-## Available Scripts
+<br>
+<br>
 
-In the project directory, you can run:
+## :book: About the project
+Happy is an application created to help the community find animal shelters. The goal is to get people in contact with these shelters and adopt a little animal. In addition to viewing information about the shelters, the user can register a new one to help the platform grow.
+<br>
+<br>
 
-### `npm start`
+## :hammer_and_wrench: Used Technologies 
+* React
+* Leaflet
+* React Leaflet
+* Mapbox
+* Context API
+* Material UI
+* Node.js
+* Postgres
+* Express
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🖥 Preview
+![Screen-Recording-2020-11-20-at-1 (1)](https://user-images.githubusercontent.com/68092946/99820472-d22b5300-2b1e-11eb-81d9-cf5bd671bb51.gif)
 
-### `npm test`
+![Screen-Recording-2020-11-20-at-1 (4)](https://user-images.githubusercontent.com/68092946/99823953-056fe100-2b23-11eb-86f2-0fa6e78f2308.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<br>
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙ How to run 
+Happy is deployed on Heroku. You can see a demo by clicking [HERE](https://happy-pet-shelters.herokuapp.com/).
+<br>
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :heavy_exclamation_mark: Challenges
+One of the biggest challenges was working with the map and sending the location information to the database.
+<br>
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :soon: Next Steps
+* Add a theme changer
+* Add a search bar to the main map
+* Display name and address when you click the marker on the main map
+* Allows the user to add the exact location of the shelter by clicking on the map
+* Add more specific contact fields
+<br>
 
-### `npm run eject`
+## :wave: Let's connect!
+Get in touch on [LinkedIn](https://www.linkedin.com/in/alessandra-burckhalter/).
+<br /> 
+<br /> 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+****
+####  <div align="center">Made with <span style="color: #e25555;">&#9829;</span> by Alessandra Burckhalter</div>
